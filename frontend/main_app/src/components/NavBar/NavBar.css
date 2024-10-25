@@ -1,0 +1,106 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Increased padding for better spacing */
+    background-color: #2a9d8f; /* Main background color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Font for the navbar */
+    height: 60px; /* Fixed height */
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensures the navbar is above other content */
+}
+
+/* Title on the left */
+.left-nav {
+    font-size: 25px; /* Font size for title */
+    font-weight: bold; /* Make title bold */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Container for the right navigation links */
+.right-nav {
+    display: flex; /* Flexbox for alignment */
+}
+
+/* Styling for the list of right links */
+.right-links {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 30px; /* Space between links */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+/* Anchor link styles */
+.right-links a {
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 20px; /* Font size for links */
+    font-weight: 500; /* Medium font weight */
+    color: #fff; /* Text color */
+    position: relative; /* Relative positioning for dropdown */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change color on hover */
+.right-links a:hover {
+    color: #264653; /* Color change on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative; /* Relative position for dropdown alignment */
+}
+
+.dropdown-menu {
+    position: absolute; /* Positioned absolutely */
+    top: 100%; /* Align below the "Diseases" link */
+    left: 0;  /* Align to the right of the dropdown parent */
+    background-color: #2a9d8f; /* Background color for dropdown */
+    padding: 10px 0; /* Padding for dropdown */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* No margin */
+    min-width: 150px; /* Minimum width for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    opacity: 0; /* Hidden by default */
+    transform: translateY(-10px); /* Slight upward animation */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+    pointer-events: auto; /* Allow interaction */
+}
+
+/* Individual dropdown items */
+.dropdown-menu li {
+    padding: 10px 15px; /* Padding for dropdown items */
+}
+
+/* Dropdown item links */
+.dropdown-menu a {
+    font-size: 18px; /* Font size for dropdown items */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Full width */
+}
+
+/* Change background on hover for dropdown items */
+/* .dropdown-menu a:hover {
+    background-color: #264653;
+} */
+
+/* Add body padding to prevent overlap */
+body {
+    padding-top: 60px; /* Space for the fixed navbar */
+}
