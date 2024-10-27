@@ -1,0 +1,96 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .services {
+    margin: 20px 0;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 15px;
+  }
+  
+  .services ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .services li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .cta-buttons {
+    margin-top: 30px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the height to full viewport height */
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    height: 100%; /* Full height of the parent */
+  }
+  
+  h1 {
+    color: #343a40;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  .chart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  

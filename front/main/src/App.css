@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 40px; 
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.form-left, .form-right {
+  flex: 1; 
+  margin: 10px;
+  min-width: 350px; 
+  box-sizing: border-box;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #fff; 
+}
+
+/* Increase font size for headers and form fields */
+h2 {
+  font-size: 28px; /* Larger font size for the title */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.input-field {
+  width: 100%; /* Make input fields take full width of the container */
+  padding: 15px; /* Increase padding for larger touch area */
+  margin: 10px -10px; /* Margin between fields */
+  border: 1px solid #ccc; /* Light border for the input fields */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Larger font size for input text */
+}
+
+.button {
+  width: 100%; /* Make button take full width */
+  padding: 15px; /* Add some padding for comfort */
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for buttons */
+  font-size: 16px; /* Larger font size for button text */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-message, .prediction {
+  color: red; /* Color for error message */
+  margin-top: 10px; /* Space above messages */
+  font-size: 16px; /* Increase font size for messages */
+}
+.home-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.home-container h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.home-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-container li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #007bff; /* Bootstrap primary color */
+}
+

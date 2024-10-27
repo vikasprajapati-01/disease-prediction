@@ -1,0 +1,80 @@
+/* FormStyles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+    background-color: #f4f7fa; /* Light background color for the body */
+    color: #333; /* Dark color for the text */
+    margin: 0; /* Reset default margin */
+    padding: 20px; /* Padding around the body */
+}
+
+.dia-container {
+    display: block;
+    max-width: 600px;
+}
+
+/* Form Styles */
+.form-box {
+    padding: 30px; /* Padding around the form */
+    border: 1px solid #ccc; /* Light border for the form box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for form */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width of its container */
+    max-width: 400px; /* Maximum width of the form */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+    color: #0056b3; /* Primary color for the heading */
+}
+
+.input-field {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ccc; /* Border around input fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+}
+
+.button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #0056b3; /* Primary color for the button */
+    color: white; /* Text color for the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+}
+
+.button:hover {
+    background-color: #004494; /* Darken button color on hover */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center error messages */
+}
+
+.prediction {
+    color: green; /* Green color for prediction messages */
+    text-align: center; /* Center prediction messages */
+    font-weight: bold; /* Bold font for prediction */
+}
+
+.prediction strong {
+    font-size: 25px;
+}
+
+.prediction li {
+    text-align: left;
+    color: #004494;
+}
+
+.measure {
+    color: #004494;
+}

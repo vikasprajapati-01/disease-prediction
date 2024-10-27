@@ -1,0 +1,32 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;                      /* Use flexbox for alignment */
+    justify-content: space-between;    /* Space between brand and links */
+    align-items: center;               /* Center vertically */
+    background-color: #282c34;        /* Dark background color */
+    padding: 15px 30px;               /* Padding for spacing */
+    color: white;                     /* Text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.navbar-brand {
+    font-size: 24px;                  /* Font size for brand */
+    font-weight: bold;                /* Bold text for brand */
+}
+
+.navbar-links {
+    display: flex;                    /* Use flexbox for links */
+    gap: 20px;                        /* Space between links */
+}
+
+.navbar-item {
+    cursor: pointer;                  /* Pointer cursor on hover */
+    color: white;                     /* Link color */
+    text-decoration: none;            /* Remove underline */
+    transition: color 0.3s ease;     /* Transition for hover effect */
+}
+
+.navbar-item:hover {
+    color: #61dafb;                  /* Change color on hover */
+}
