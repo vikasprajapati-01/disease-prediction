@@ -78,3 +78,69 @@ h2 {
 .measure {
     color: #004494;
 }
+
+@media (max-width: 768px) {
+    .dia-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .input-field {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .prediction {
+        font-size: 1.1rem;
+    }
+
+    .prediction strong {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dia-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .prediction {
+        font-size: 1rem;
+    }
+
+    .prediction strong {
+        font-size: 1.1rem;
+    }
+}

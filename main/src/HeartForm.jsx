@@ -50,6 +50,7 @@ const HeartForm = () => {
     return (
         <div className="heart-container">
             <h2>Heart Disease Prediction</h2>
+            <h3>Visit a doctor for accurate results</h3>
             <form onSubmit={handleSubmit}>
                 <input type="number" name="age" onChange={handleChange} placeholder="Age" required className="input-field" />
                 <input type="number" name="sex" onChange={handleChange} placeholder="Sex (1 = Male, 0 = Female)" required className="input-field" />
@@ -70,7 +71,7 @@ const HeartForm = () => {
             {prediction && <h3 className="prediction">
                 {prediction == 1 ? (
                     <>
-                        <strong>The person is having Heart disease</strong><br />
+                        <h3>The person is having Heart disease</h3><br />
                         <br />
                         <strong className="measure">MEASURES TO BE TAKEN:</strong>
                         <ol>

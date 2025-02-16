@@ -1,0 +1,25 @@
+.chart {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .chart {
+      max-width: 90%;
+      padding: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart {
+      max-width: 95%;
+      padding: 5px;
+    }
+  
+    .chart h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

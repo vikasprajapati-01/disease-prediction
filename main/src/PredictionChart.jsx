@@ -2,6 +2,8 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title } from 'chart.js';
 
+import './PredictionChart.css'
+
 // Register the necessary components from Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title);
 
@@ -37,7 +39,7 @@ const PredictionChart = () => {
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto' }} className='chart'>
       <h2>Predictions Overview</h2>
       <Bar data={data} options={options} />
     </div>

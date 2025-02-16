@@ -45,6 +45,7 @@ const DiabetesForm = () => {
     return (
         <div className="dia-container">
             <h2>Diabetes Prediction</h2>
+            <h3>Visit a doctor for accurate results</h3>
             <form onSubmit={handleSubmit}>
                 <input type="number" name="pregnancies" onChange={handleChange} placeholder="Number of Pregnancies" required className="input-field" />
                 <input type="number" name="glucose" onChange={handleChange} placeholder="Glucose Level" required className="input-field" />
@@ -60,7 +61,7 @@ const DiabetesForm = () => {
             {prediction && <h3 className="prediction">
                 {prediction == 1 ? (
                     <>
-                        <strong>The person is Diabetic</strong><br />
+                        <h3>The person might be Diabetic</h3><br />
                         <br />
                         <strong className="measure">MEASURES TO BE TAKEN:</strong>
                         <ol>
