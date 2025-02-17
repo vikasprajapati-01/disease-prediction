@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './DiabetesForm.css'; // Import the CSS file
 
+import { api } from './api';
+
 const DiabetesForm = () => {
     const [inputData, setInputData] = useState({
         pregnancies: '',
@@ -34,7 +36,7 @@ const DiabetesForm = () => {
         }
 
         try {
-            const response = await axios.post('api/app/predict/diabetes/', inputData);
+            const response = await axios.post('http://localhost:8000/app/predict/diabetes/', inputData);
             setPrediction(response.data.prediction);
         } catch (error) {
             console.error('Error making prediction:', error);
