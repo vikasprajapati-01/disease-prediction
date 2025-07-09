@@ -39,7 +39,7 @@ const HeartForm = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:8000/app/predict/heart/', inputData);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/app/predict/heart/`, inputData);
             setPrediction(response.data.prediction);
         } catch (error) {
             console.error('Error making prediction:', error);
